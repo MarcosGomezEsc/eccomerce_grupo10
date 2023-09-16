@@ -1,0 +1,435 @@
+{
+  "autos": [
+      {
+        "id": 1,
+        "titulo": "Chevrolet Bel Air 1955",
+        "descripcion": "Clásico restaurado en excelente estado. Motor V8 original y pintura impecable.",
+        "precio_ar": 850000,
+        "imagenes": [
+          "imagen1.jpg",
+          "imagen2.jpg",
+          "imagen3.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Ford Mustang 1967",
+        "descripcion": "Icono de los muscle cars. Restaurado y listo para lucir en car shows.",
+        "precio_ar": 980000,
+        "imagenes": [
+          "imagen4.jpg",
+          "imagen5.jpg",
+          "imagen6.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Volkswagen Beetle 1963",
+        "descripcion": "Un clásico escarabajo en excelente estado. Perfecto para coleccionistas.",
+        "precio_ar": 720000,
+        "imagenes": [
+          "imagen7.jpg",
+          "imagen8.jpg",
+          "imagen9.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Chevrolet Camaro 1969",
+        "descripcion": "Potente muscle car con un motor V8. Restaurado con atención al detalle.",
+        "precio_ar": 1100000,
+        "imagenes": [
+          "imagen10.jpg",
+          "imagen11.jpg",
+          "imagen12.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Fiat 500 1965",
+        "descripcion": "Encantador Fiat 500 restaurado. Ideal para paseos por la ciudad.",
+        "precio_ar": 620000,
+        "imagenes": [
+          "imagen13.jpg",
+          "imagen14.jpg",
+          "imagen15.jpg"
+        ]
+      },
+      {
+        "id": 6,
+        "titulo": "Dodge Charger 1970",
+        "descripcion": "Muscle car legendario con un motor V8. Totalmente restaurado.",
+        "precio_ar": 1250000,
+        "imagenes": [
+          "imagen16.jpg",
+          "imagen17.jpg",
+          "imagen18.jpg"
+        ]
+      },
+      {
+        "id": 7,
+        "titulo": "Cadillac DeVille 1959",
+        "descripcion": "Lujo y estilo de los años 50 en este Cadillac. Restaurado a la perfección.",
+        "precio_ar": 1450000,
+        "imagenes": [
+          "imagen19.jpg",
+          "imagen20.jpg",
+          "imagen21.jpg"
+        ]
+      },
+      {
+        "id": 8,
+        "titulo": "Porsche 356 1954",
+        "descripcion": "Clásico deportivo Porsche. Restaurado con piezas originales.",
+        "precio_ar": 980000,
+        "imagenes": [
+          "imagen22.jpg",
+          "imagen23.jpg",
+          "imagen24.jpg"
+        ]
+      },
+      {
+        "id": 9,
+        "titulo": "Chevrolet Impala 1962",
+        "descripcion": "Impala clásico en excelente estado. Listo para disfrutar de la carretera.",
+        "precio_ar": 890000,
+        "imagenes": [
+          "imagen25.jpg",
+          "imagen26.jpg",
+          "imagen27.jpg"
+        ]
+      },
+      {
+        "id": 10,
+        "titulo": "Mercedes-Benz 300SL 1957",
+        "descripcion": "El legendario 'Alas de Gaviota' en perfecto estado. Un verdadero tesoro.",
+        "precio_ar": 2200000,
+        "imagenes": [
+          "imagen28.jpg",
+          "imagen29.jpg",
+          "imagen30.jpg"
+        ]
+      },
+      {
+        "id": 11,
+        "titulo": "Jeep Willys 1945",
+        "descripcion": "Jeep clásico de la Segunda Guerra Mundial. Restaurado y listo para la aventura.",
+        "precio_ar": 580000,
+        "imagenes": [
+          "imagen31.jpg",
+          "imagen32.jpg",
+          "imagen33.jpg"
+        ]
+      },
+      {
+        "id": 12,
+        "titulo": "Buick Riviera 1966",
+        "descripcion": "Elegante Buick Riviera en excelente condición. Un verdadero lujo sobre ruedas.",
+        "precio_ar": 1050000,
+        "imagenes": [
+          "imagen34.jpg",
+          "imagen35.jpg",
+          "imagen36.jpg"
+        ]
+      },
+      {
+        "id": 14,
+        "titulo": "Oldsmobile 442 1970",
+        "descripcion": "Potente muscle car Oldsmobile 442. Restaurado a la perfección.",
+        "precio_ar": 1150000,
+        "imagenes": [
+          "imagen37.jpg",
+          "imagen38.jpg",
+          "imagen39.jpg"
+        ]
+      },
+      {
+        "id": 15,
+        "titulo": "Jaguar E-Type 1961",
+        "descripcion": "El icónico Jaguar E-Type en estado impecable. Un verdadero clásico británico.",
+        "precio_ar": 1650000,
+        "imagenes": [
+          "imagen40.jpg",
+          "imagen41.jpg",
+          "imagen42.jpg"
+        ]
+      },
+      {
+        "id": 16,
+        "titulo": "Pontiac GTO 1967",
+        "descripcion": "Muscle car Pontiac GTO con motor V8. Restaurado con atención al detalle.",
+        "precio_ar": 1250000,
+        "imagenes": [
+          "imagen43.jpg",
+          "imagen44.jpg",
+          "imagen45.jpg"
+        ]
+      },
+      {
+        "id": 17,
+        "titulo": "Austin-Healey 3000 1967",
+        "descripcion": "Elegante roadster Austin-Healey 3000. Restaurado y listo para las carreteras.",
+        "precio_ar": 880000,
+        "imagenes": [
+          "imagen46.jpg",
+          "imagen47.jpg",
+          "imagen48.jpg"
+        ]
+      },
+      {
+        "id": 18,
+        "titulo": "Chevrolet Corvette 1963",
+        "descripcion": "El clásico Corvette Sting Ray en excelente estado. Una joya del automovilismo.",
+        "precio_ar": 1550000,
+        "imagenes": [
+          "imagen49.jpg",
+          "imagen50.jpg",
+          "imagen51.jpg"
+        ]
+      },
+      {
+        "id": 19,
+        "titulo": "Ford Thunderbird 1957",
+        "descripcion": "Ford Thunderbird clásico en estado impecable. Perfecto para coleccionistas.",
+        "precio_ar": 1350000,
+        "imagenes": [
+          "imagen52.jpg",
+          "imagen53.jpg",
+          "imagen54.jpg"
+        ]
+      },
+      {
+        "id": 20,
+        "titulo": "MGB Roadster 1968",
+        "descripcion": "Encantador MGB Roadster en excelente condición. Ideal para paseos al aire libre.",
+        "precio_ar": 680000,
+        "imagenes": [
+          "imagen55.jpg",
+          "imagen56.jpg",
+          "imagen57.jpg"
+        ]
+      },
+      {
+        "id": 21,
+        "titulo": "Ford Model T 1915",
+        "descripcion": "El icónico Ford Modelo T, conocido como el 'Tin Lizzie'. Estado original de colección.",
+        "precio_ar": 450000,
+        "imagenes": [
+          "ford_model_t1.jpg",
+          "ford_model_t2.jpg",
+          "ford_model_t3.jpg"
+        ]
+      },
+      {
+        "id": 22,
+        "titulo": "Dodge Brothers Touring 1923",
+        "descripcion": "Dodge Brothers Touring en excelente estado. Perfecto para eventos de época.",
+        "precio_ar": 550000,
+        "imagenes": [
+          "dodge_brothers_touring1.jpg",
+          "dodge_brothers_touring2.jpg",
+          "dodge_brothers_touring3.jpg"
+        ]
+      },
+      {
+        "id": 23,
+        "titulo": "Chevrolet Suburban 1947",
+        "descripcion": "Chevrolet Suburban clásica de la posguerra en buen estado de conservación.",
+        "precio_ar": 680000,
+        "imagenes": [
+          "chevrolet_suburban1.jpg",
+          "chevrolet_suburban2.jpg",
+          "chevrolet_suburban3.jpg"
+        ]
+      },
+      {
+        "id": 24,
+        "titulo": "Cadillac Fleetwood 1950",
+        "descripcion": "Elegante Cadillac Fleetwood de 1950 en estado impecable. Lujo sobre ruedas.",
+        "precio_ar": 850000,
+        "imagenes": [
+          "cadillac_fleetwood1.jpg",
+          "cadillac_fleetwood2.jpg",
+          "cadillac_fleetwood3.jpg"
+        ]
+      },
+      {
+        "id": 25,
+        "titulo": "Studebaker Champion 1951",
+        "descripcion": "Studebaker Champion restaurado y listo para rodar. Un verdadero clásico americano.",
+        "precio_ar": 720000,
+        "imagenes": [
+          "studebaker_champion1.jpg",
+          "studebaker_champion2.jpg",
+          "studebaker_champion3.jpg"
+        ]
+      },
+      {
+        "id": 26,
+        "titulo": "Hudson Hornet 1954",
+        "descripcion": "Hudson Hornet, un competidor de NASCAR en su época. Restaurado a la perfección.",
+        "precio_ar": 990000,
+        "imagenes": [
+          "hudson_hornet1.jpg",
+          "hudson_hornet2.jpg",
+          "hudson_hornet3.jpg"
+        ]
+      },
+      {
+        "id": 27,
+        "titulo": "Plymouth Fury 1958",
+        "descripcion": "Plymouth Fury en excelentes condiciones. Famoso por la película 'Christine'.",
+        "precio_ar": 1100000,
+        "imagenes": [
+          "plymouth_fury1.jpg",
+          "plymouth_fury2.jpg",
+          "plymouth_fury3.jpg"
+        ]
+      },
+      {
+        "id": 28,
+        "titulo": "Pontiac Bonneville 1959",
+        "descripcion": "Pontiac Bonneville clásico de los años 50 en estado de concurso.",
+        "precio_ar": 1250000,
+        "imagenes": [
+          "pontiac_bonneville1.jpg",
+          "pontiac_bonneville2.jpg",
+          "pontiac_bonneville3.jpg"
+        ]
+      },
+      {
+        "id": 29,
+        "titulo": "Buick Skylark 1962",
+        "descripcion": "Buick Skylark convertible en excelente estado. Perfecto para los días soleados.",
+        "precio_ar": 1150000,
+        "imagenes": [
+          "buick_skylark1.jpg",
+          "buick_skylark2.jpg",
+          "buick_skylark3.jpg"
+        ]
+      },
+      {
+        "id": 30,
+        "titulo": "Chevrolet Nova SS 1966",
+        "descripcion": "Chevrolet Nova SS con motor V8. Restaurado con atención al detalle.",
+        "precio_ar": 1350000,
+        "imagenes": [
+          "chevrolet_nova_ss1.jpg",
+          "chevrolet_nova_ss2.jpg",
+          "chevrolet_nova_ss3.jpg"
+        ]
+      },
+      {
+        "id": 31,
+        "titulo": "Mercury Cougar 1967",
+        "descripcion": "Mercury Cougar clásico en excelente condición. Un verdadero muscle car.",
+        "precio_ar": 1250000,
+        "imagenes": [
+          "mercury_cougar1.jpg",
+          "mercury_cougar2.jpg",
+          "mercury_cougar3.jpg"
+        ]
+      },
+      {
+        "id": 32,
+        "titulo": "Oldsmobile Toronado 1968",
+        "descripcion": "Oldsmobile Toronado en estado impecable. Lujo y potencia en uno.",
+        "precio_ar": 1450000,
+        "imagenes": [
+          "oldsmobile_toronado1.jpg",
+          "oldsmobile_toronado2.jpg",
+          "oldsmobile_toronado3.jpg"
+        ]
+      },
+      {
+        "id": 33,
+        "titulo": "Porsche 911 1969",
+        "descripcion": "Porsche 911 clásico en excelentes condiciones. Un ícono de la marca.",
+        "precio_ar": 1850000,
+        "imagenes": [
+          "porsche_9111.jpg",
+          "porsche_9112.jpg",
+          "porsche_9113.jpg"
+        ]
+      },
+      {
+        "id": 34,
+        "titulo": "Aston Martin DB5 1964",
+        "descripcion": "Aston Martin DB5, el auto de James Bond. Restaurado y listo para la acción.",
+        "precio_ar": 2350000,
+        "imagenes": [
+          "aston_martin_db51.jpg",
+          "aston_martin_db52.jpg",
+          "aston_martin_db53.jpg"
+        ]
+      },
+      {
+        "id": 35,
+        "titulo": "Volkswagen Type 2 (Combi) 1967",
+        "descripcion": "Volkswagen Type 2, la clásica 'Combi' en buen estado. Ideal para aventuras.",
+        "precio_ar": 650000,
+        "imagenes": [
+          "volkswagen_combi1.jpg",
+          "volkswagen_combi2.jpg",
+          "volkswagen_combi3.jpg"
+        ]
+      },
+      {
+        "id": 36,
+        "titulo": "Austin Mini Cooper 1965",
+        "descripcion": "Austin Mini Cooper clásico en excelente condición. Perfecto para la ciudad.",
+        "precio_ar":780000,
+        "imagenes": [
+          "austin_mini_cooper1.jpg",
+          "austin_mini_cooper2.jpg",
+          "austin_mini_cooper3.jpg"
+        ]
+      },
+      {
+        "id": 37,
+        "titulo": "Jaguar XK-E 1966",
+        "descripcion": "El legendario Jaguar XK-E en estado impecable. Elegancia británica sobre ruedas.",
+        "precio_ar": 1750000,
+        "imagenes": [
+          "jaguar_xke1.jpg",
+          "jaguar_xke2.jpg",
+          "jaguar_xke3.jpg"
+        ]
+      },
+      {
+        "id": 38,
+        "titulo": "Mercedes-Benz 190SL 1958",
+        "descripcion": "Mercedes-Benz 190SL en excelente estado. Clásico de la marca alemana.",
+        "precio_ar": 950000,
+        "imagenes": [
+          "mercedes_benz_190sl1.jpg",
+          "mercedes_benz_190sl2.jpg",
+          "mercedes_benz_190sl3.jpg"
+        ]
+      },
+      {
+        "id": 39,
+        "titulo": "Rolls-Royce Silver Cloud 1959",
+        "descripcion": "Rolls-Royce Silver Cloud en estado de museo. Elegancia y lujo sin igual.",
+        "precio_ar": 2200000,
+        "imagenes": [
+          "rolls_royce_silver_cloud1.jpg",
+          "rolls_royce_silver_cloud2.jpg",
+          "rolls_royce_silver_cloud3.jpg"
+        ]
+      },
+      {
+        "id": 40,
+        "titulo": "MG MGA 1956",
+        "descripcion": "MG MGA clásico en excelente condición. Ideal para los amantes de los deportivos británicos.",
+        "precio_ar": 850000,
+        "imagenes": [
+          "mg_mga1.jpg",
+          "mg_mga2.jpg",
+          "mg_mga3.jpg"
+        ]
+      }
+
+    ]
+}
+    
