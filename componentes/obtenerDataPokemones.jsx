@@ -4,7 +4,6 @@ import { PokemonContext } from "../contexto/FetchPokemones";
 function DataPokemo() {
   const { data, loading } = useContext(PokemonContext);
   const [searchTerm, setSearchTerm] = useState(""); // Estado para almacenar el término de búsqueda
-  console.log(data)
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value); // Actualizar el término de búsqueda cuando el usuario escriba en el campo de búsqueda
@@ -22,11 +21,21 @@ function DataPokemo() {
         <p>Cargando...</p>
       ) : (
         <ul>
-          {data.results.filter((item) =>
-              item.name.toLowerCase().includes(searchTerm.toLowerCase())) // Filtrar los resultados en función del término de búsqueda
-            .map((items, index) => (
-              <li key={index}>{items.name}</li>
-            ))}
+          {data.length > 0 ? (
+            data.filter((item) =>
+            item.name.toLowerCase().includes(searchTerm.toLowerCase())
+              ).map((item, index) => (
+                <article key={index}>
+                <h1>{item.name}</h1>
+                
+                <div>
+                  <img src={item.image} alt={item.name} />
+                </div>
+              </article>
+            ))
+            ) : (
+              <p>No se encontraron resultados.</p>
+              )}
         </ul>
       )}
     </div>
