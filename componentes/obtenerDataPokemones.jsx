@@ -8,10 +8,25 @@ import '../cssComponentes/PokeCards.css'
 function DataPokemo() {
   const { data, loading } = useContext(PokemonContext);
   const [searchTerm, setSearchTerm] = useState(""); // Estado para almacenar el término de búsqueda
+  const [lista, setlista] = useState("name"); // Estado para el tipo de orden (por nombre o por ID)
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
+
+  const handleSort = (event) => {
+    setlista(event.target.value); // Actualizar el tipo de orden cuando el usuario elija una opción de orden
+  };
+
+  // Función para ordenar los datos
+  const sortedData = [...data].sort((a, b) => {
+    if (lista === "name") {
+      return a.name.localeCompare(b.name);
+    } else if (lista === "id") {
+      return a.id - b.id;
+    }
+    return 0;
+  });
 
   return (
     <div>
@@ -21,20 +36,29 @@ function DataPokemo() {
         value={searchTerm}
         onChange={handleSearch}
       />
+      
+      <div>
+        <select className="select" value={lista} onChange={handleSort}>
+          <option value="name">Ordenar por nombre</option>
+          <option value="id">Ordenar Precio</option>
+        </select>
+      </div>
+
       {loading ? (
         <p>Cargando...</p>
       ) : (
         <section>
           {data.length > 0 ? (
-  data
-    .filter((item) => {
-      const searchTermLower = searchTerm.toLowerCase();
+        data && sortedData
+          .filter((item) => {
+            const searchTermLower = searchTerm.toLowerCase();
 
-      return (
-        item.name.toLowerCase().includes(searchTermLower) ||
-        (item.id*265).toString().includes(searchTermLower)
-      );
-    })
+          return (
+            item.name.toLowerCase().includes(searchTermLower) ||
+            (item.id*265).toString().includes(searchTermLower)
+          );
+        })
+
     .map((item, index) => (
       <article key={index}>
         <PokemonCards item={item}></PokemonCards>
