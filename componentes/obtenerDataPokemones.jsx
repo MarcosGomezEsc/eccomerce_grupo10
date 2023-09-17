@@ -1,6 +1,8 @@
 import { useState, useContext } from "react";
 import { PokemonContext } from "../contexto/FetchPokemones";
 import PokemonCards from "./PokemonCards";
+import '../cssComponentes/PokeCards.css'
+
 
 
 function DataPokemo() {
@@ -8,7 +10,7 @@ function DataPokemo() {
   const [searchTerm, setSearchTerm] = useState(""); // Estado para almacenar el término de búsqueda
 
   const handleSearch = (event) => {
-    setSearchTerm(event.target.value); // Actualizar el término de búsqueda cuando el usuario escriba en el campo de búsqueda
+    setSearchTerm(event.target.value);
   };
 
   return (
@@ -22,19 +24,26 @@ function DataPokemo() {
       {loading ? (
         <p>Cargando...</p>
       ) : (
-        <ul>
+        <section>
           {data.length > 0 ? (
-            data.filter((item) =>
-            item.name.toLowerCase().includes(searchTerm.toLowerCase())
-              ).map((item, index) => (
-                <article key={index}>
-                <PokemonCards item={item}></PokemonCards>
-              </article>
-            ))
-            ) : (
-              <p>No se encontraron resultados.</p>
-              )}
-        </ul>
+  data
+    .filter((item) => {
+      const searchTermLower = searchTerm.toLowerCase();
+
+      return (
+        item.name.toLowerCase().includes(searchTermLower) ||
+        (item.id*265).toString().includes(searchTermLower)
+      );
+    })
+    .map((item, index) => (
+      <article key={index}>
+        <PokemonCards item={item}></PokemonCards>
+      </article>
+    ))
+) : (
+  <p>No se encontraron resultados.</p>
+)}
+        </section>
       )}
     </div>
   );
