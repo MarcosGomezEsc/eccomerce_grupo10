@@ -5,14 +5,22 @@ import { PokemonContext } from '../contexto/FetchPokemones';
 function PagesPokemones() {
     const { setCurrentPage } = useContext(PokemonContext);
 
-    const handleLoadMore = () => {
+    const MasPersonajes = () => {
       setCurrentPage((prevPage) => prevPage + 1); // Aumenta la página actual
+    }; 
+    const MenosPersonajes = () => {
+      setCurrentPage((prevPage) => prevPage - 1); // Aumenta la página actual
     };
   
     return (
-      <button onClick={handleLoadMore}>
-        Cargar más personajes
+      <>
+      <button onClick={MenosPersonajes}>
+        Cargar menos personajes
       </button>
+      
+      <button onClick={MasPersonajes}>
+        Cargar más personajes </button>   
+      </>
     );
   
 }
