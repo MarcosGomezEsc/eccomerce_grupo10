@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: tomato;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
