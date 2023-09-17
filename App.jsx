@@ -1,11 +1,13 @@
-import Home from '../../pages/Home'
-import Autos from './componentes/Autos'
-import Compra from './componentes/Compra'
-import Error404 from './componentes/404_Error'
+
+import { Navigate } from 'react-router-dom'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { NavegacionPag } from './componentes/NavegacionPag'
+
 import './cssComponentes/App.css'
-import { DataProvider } from './cars'
+import { PokemonProvider } from './contexto/FetchPokemones'
+import DataPokemo from './componentes/obtenerDataPokemones'
+import PagesPokemones from './componentes/PagesPokemones'
 
 function App() {
 
@@ -13,24 +15,28 @@ function App() {
     <>
     
     <BrowserRouter>
-      <DataProvider>
-
-
-
-        <Link to="/autos">Autos</Link>
-        <Link to="/compra">Compra</Link>
-
+      <PokemonProvider>
 
 
         <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/autos" element={<Autos />}>
-            </Route>
-            <Route path="/compra" element={<Compra/>}></Route>
-            <Route path="*" element={<Error404/>}></Route>
+          <Route path='/' element={<NavegacionPag/>} >
+            <Route path='pokemon/:id' element={<h2>Mantenimiento</h2>}></Route>
+            <Route path='/search' element={<h2>Mantenimiento</h2>}></Route>
+            <Route path='' element={<></>}></Route>
+
+          </Route>
+
+          
+
+          <Route path='*' element={<Navigate to="/" />}></Route>
         </Routes>
 
-      </DataProvider>
+        <PagesPokemones></PagesPokemones>
+
+
+        <DataPokemo></DataPokemo>
+        
+      </PokemonProvider>
     </BrowserRouter>
     </>
   )
