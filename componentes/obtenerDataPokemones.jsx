@@ -1,5 +1,7 @@
 import { useState, useContext } from "react";
 import { PokemonContext } from "../contexto/FetchPokemones";
+import PokemonCards from "./PokemonCards";
+
 
 function DataPokemo() {
   const { data, loading } = useContext(PokemonContext);
@@ -26,11 +28,7 @@ function DataPokemo() {
             item.name.toLowerCase().includes(searchTerm.toLowerCase())
               ).map((item, index) => (
                 <article key={index}>
-                <h1>{item.name}</h1>
-                
-                <div>
-                  <img src={item.image} alt={item.name} />
-                </div>
+                <PokemonCards item={item}></PokemonCards>
               </article>
             ))
             ) : (
