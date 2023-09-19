@@ -8,6 +8,14 @@ import { PokemonProvider } from './contexto/FetchPokemones'
 import DataPokemo from './componentes/obtenerDataPokemones'
 import PagesPokemones from './componentes/PagesPokemones'
 
+
+//____
+
+import Inicio from './componentes/Inicio'
+import Productos from './componentes/Productos'
+import AcercaDe from './componentes/AcercaDe'
+import Contacto from './componentes/Contacto'
+
 function App() {
 
   return (
@@ -18,13 +26,12 @@ function App() {
 
         <Routes>
           <Route path='/' element={<NavegacionPag/>} >
-            <Route path='LogIn' element={<h2>Mantenimiento</h2>}></Route>
-            <Route path='/Ordenar' element={<h2>Mantenimiento</h2>}></Route>
-            <Route path='' element={<></>}></Route>
-
+              <Route path="/" exact element={<Inicio></Inicio>} />
+            <Route path="/productos" element={<Productos></Productos>} />
+            <Route path="/acerca-de" element={<AcercaDe></AcercaDe>} />
+            <Route path="/contacto" element={<Contacto></Contacto>} />
           </Route>
 
-          
 
           <Route path='*' element={<Navigate to="/" />}></Route>
         </Routes>
@@ -34,8 +41,10 @@ function App() {
 
         <DataPokemo></DataPokemo>
         
+        <AcercaDe>    </AcercaDe>
       </PokemonProvider>
     </BrowserRouter>
+
     </>
   )
 }
