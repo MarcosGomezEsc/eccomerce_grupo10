@@ -1,10 +1,11 @@
 import { Link, Outlet } from "react-router-dom"
 import '../cssComponentes/headerNavegacion.css'
-import PokeLista from "./PokeLista"
+import Carrito from "./Carrito"
 
 export const NavegacionPag =()=>{
     return (
 
+            
         <>
         <header className="header">
           <div className="logo">
@@ -12,6 +13,9 @@ export const NavegacionPag =()=>{
               src="https://www.pngall.com/wp-content/uploads/4/Pokemon-Pokeball-PNG-Clipart.png"
               alt=""
             />
+          </div>
+          <div>
+          <Carrito>Carrito</Carrito>
           </div>
   
           <nav className="nav">
@@ -36,6 +40,8 @@ export const NavegacionPag =()=>{
         <h3>¿Qué personaje desea llevar?</h3>
         
       </>
+
+  
 
 
     )
