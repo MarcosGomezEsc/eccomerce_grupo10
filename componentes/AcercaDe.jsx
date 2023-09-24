@@ -1,12 +1,12 @@
 export default function AcercaDe(){
     return (
     <>
-    <h2>¿Quienes Somos?</h2>
-    <section>
+    <section className="acercaDee">
         <div className="imgSection">
             <img src="https://via.placeholder.com/250x250" alt="" />
         </div>
         <div className="sectionData">
+            <h2>¿Quienes Somos?</h2>
             <h2>Nosotros somos PokeTienda</h2>
             <h4>¿Qué hacemos?</h4>
             <p>Bueno, somos una empresa encargada de ecologizar todos los materiales plásticos</p>
@@ -15,13 +15,13 @@ export default function AcercaDe(){
             <img src="https://via.placeholder.com/250x250" alt="" />
         </div>
         <div className="sectionData3">
-            <h2>Seguramente te preguntes Cómo es que nosotros estamos taaaan descriptivos en esto</h2>
+            <h3>Seguramente te preguntes Cómo es que nosotros estamos taaaan descriptivos en esto</h3>
             <h4>Dejanos sorprenderte</h4>
             <p>Nosotros tomamos material reciclado, rebuscamos entre los materiables desechables todas aquellas cosas que se ven muy tentadoramente manualizable (¿Existe esa palabra?) y nos encargamos de que llegue a sus manos en forma de pokeamigo
             </p>
         </div>
         <div className="sectionData3">
-            <h2>¿Acaso no es genial?</h2>
+            <h3>¿Acaso no es genial?</h3>
             <h4>¿Que cómo lo hacemos?</h4>
             <p>Muy fácil. Agarramos botellas de plástico. Nooo se preocupe, están en lavandina un bueen tiempo,
                 después, le agregamos una pizca de, bueno, creatividad.
