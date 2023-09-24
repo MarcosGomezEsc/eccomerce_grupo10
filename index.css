@@ -50,7 +50,27 @@ input, button {
   margin: 1rem;
 }
 
+.acercaDee{
+  margin-top: 10rem;
+  background-color: #d2b1ab;
+  color: rgb(88, 29, 29);
+  padding: 10rem 0;
+  display: grid;
+  text-align: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3,230px);
+  grid-template-rows: repeat(3,300px);
+}
 
+.acercaDee h2{
+  font-weight: 1800;
+  background-color: #dd6e58;
+}
+.imgSection, .imgSection2, .imgSection3{
+  width: 12rem;
+  margin: 0;
+
+}
 
 @media screen and (max-width: 300px) {
   body{
@@ -79,24 +99,27 @@ input, button {
       width: 100%;
     }
 
+   
     .carrito{
       width: 16rem;
     }
     
     .carrito{
-      width: 16rem;
+      width: 18rem;
       padding: 2.5rem;
-      margin: 5rem 3rem;
+      margin: 5rem auto;
     }
 
     .carrito ul{
-      display: flex;
+      display: block;
       flex-direction: column;
     }
-
+    
     .carrito li{
+      margin-left: 1rem;
+      width: 16rem;
       display: flex;
-      justify-content: end;
+      justify-content: space-around;
     }
 
   }
@@ -134,21 +157,21 @@ input, button {
     }
     
     .carrito{
-      width: 16rem;
+      width: 25rem;
       padding: 2.5rem;
       margin: 5rem auto;
     }
 
     .carrito ul{
-      display: flex;
+      display: block;
       flex-direction: column;
     }
-
+    
     .carrito li{
+      margin-left: 1rem;
+      width: 20rem;
       display: flex;
-      flex-direction: column;
-      align-items: space-around;
-      justify-content: end;
+      justify-content: space-around;
     }
 
 } 
