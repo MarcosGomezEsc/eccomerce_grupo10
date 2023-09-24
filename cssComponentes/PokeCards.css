@@ -24,7 +24,17 @@ article {
     border-radius: 1rem;
 }
 
+li{
+  letter-spacing: 0.5rem;  
+  display: flex;
+  justify-content: end;
+}
 
+li:hover{
+  color: rgba(106, 67, 67, 0.87);
+
+  cursor:default;
+}
 .select{
     padding: 1rem;
     margin: 1rem;
@@ -57,7 +67,9 @@ article {
     cursor: pointer;
   }
 
-
+span{
+  color: aliceblue;
+}
   .cart-popup {
     position: fixed;
     top: 50%;
@@ -71,7 +83,13 @@ article {
   .imgCart.active {
     color: red; /* Cambia el color de la imagen cuando el pop-up está abierto */
   }
-
+.Total{
+  background-color: #a83434;
+  padding: 1rem;
+  text-align: center;
+  color: aliceblue;
+  padding-left: 1rem;
+}
   .carrito{
     width: 30rem;
     margin: auto;
@@ -87,7 +105,6 @@ article {
 
   .carrito p, .carrito ul{
     padding-left: 0%;
-    font-size: 1.5rem;
   }
   
 
@@ -105,6 +122,37 @@ article {
   
   .PokeCartaContenedor{
     margin: 1rem;
+    max-width: 9rem;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .carrito li{
+    display: block;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  article {
+    margin: 1px;
+    width: 16rem;
+    border-radius: 1rem;
+    align-items: center;
+  }
+  
+  article p{
+    display: none;
+  }
+
+  
+  .PokeCartaContenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem;
     max-width: 9rem;
     background-color: aliceblue;
     padding: 0.5rem;
