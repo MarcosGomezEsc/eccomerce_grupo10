@@ -37,14 +37,14 @@ article {
 }
 
 .popup {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Asegúrate de que el popup esté por encima de otros elementos */
+    z-index: 100; /* Asegúrate de que el popup esté por encima de otros elementos */
   }
 
 
@@ -90,3 +90,28 @@ article {
     font-size: 1.5rem;
   }
   
+
+@media screen and (max-width: 300px) {
+  article {
+    margin: 0.5rem;
+    width: 12rem;
+    border-radius: 1rem;
+
+  }
+
+  .PokeCartaContenedor p{
+    display: none;
+  }
+  
+  .PokeCartaContenedor{
+    margin: 1rem;
+    max-width: 9rem;
+    background-color: aliceblue;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .carrito li{
+    display: block;
+  }
+
+}
