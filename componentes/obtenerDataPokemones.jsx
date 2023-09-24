@@ -32,7 +32,7 @@ function DataPokemo() {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
-    const [carrito, setCarrito] = useState([]); // Inicialmente el carrito está vacío
+    const [carrito, setCarrito] = useState({}); // Inicialmente el carrito está vacío
     const [precioTotal, setPrecioTotal] = useState(0);
 
 
@@ -48,22 +48,31 @@ function DataPokemo() {
 
     const addToCart = () => {
       if (selectedProduct) {
-        const productoAgregado = {
-          name: selectedProduct.name,
-          id: selectedProduct.id,
-        };
-    
-        // Agrego el nuevo producto al carrito
-        setCarrito((prevCarrito) => [...prevCarrito, productoAgregado]);
+        const productoId = selectedProduct.id;
+        const cantidadExistente = carrito[productoId] || 0; // Obtenemos la cantidad existente en el carrito
+        const nuevaCantidad = cantidadExistente + 1;
+  
+        // Actualizamos el carrito con la nueva cantidad
+        setCarrito({
+          ...carrito,
+          [productoId]: nuevaCantidad,
+        });
+  
         closePopup();
-    
-        // Calculo el precio total sumando los ids(x265 para el precio) en el carrito actualizado
-        const nuevoPrecioTotal = carrito.reduce((total, producto) => total + (producto.id*265), (selectedProduct.id*265));
+        
+        // Calculamos el precio total
+        const nuevoPrecioTotal = Object.keys(carrito).reduce((total, productId) => {
+          const producto = data.find((item) => item.id === parseInt(productId));
+          if (producto) {
+            return total + producto.id * 265 * carrito[productId];
+          }
+          return total;
+        }, 0);
         setPrecioTotal(nuevoPrecioTotal);
       }
     };
     
-
+    
     return (
     <div>
       <input
@@ -84,7 +93,8 @@ function DataPokemo() {
         {isPopupOpen &&  sortedData &&  (
           <div className="popup">
             <img src={sortedData.image} alt={sortedData.name} />
-            <p>Precio {parseInt(selectedProduct.id, 10) * 265}</p>
+            <p>Pokemon: {selectedProduct.name}</p>
+            <p>Precio: {parseInt(selectedProduct.id, 10) * 265}</p>
         <p>¿Desea comprar este producto?</p>
         <button onClick={() => closePopup()}>Cancelar</button>
         <button onClick={() => addToCart()}>Confirmar</button>
@@ -100,10 +110,10 @@ function DataPokemo() {
             data && sortedData
             .filter((item) => {
               const searchTermLower = searchTerm.toLowerCase();
-                return (
+              return (
                   item.name.toLowerCase().includes(searchTermLower) ||
                   (item.id*265).toString().includes(searchTermLower)
-                );
+                  );
               })
               
               .map((item, index) => (
@@ -121,12 +131,19 @@ function DataPokemo() {
       <div className="carrito">
     <h2>Carrito de Compras</h2>
     <ul>
-      {carrito.map((producto, index) => (
-        <li key={index}>
-          {producto.name}_____________${(producto.id)*265}
-        </li>
-      ))}
-    </ul>
+      <li>Pokemon - Cantidad - Precio</li>
+          {Object.keys(carrito).map((productId, index) => {
+            const producto = data.find((item) => item.id === parseInt(productId));
+            if (producto) {
+              return (
+                <li key={index}>
+                  {producto.name} - {carrito[productId]} - ${(producto.id * 265 * carrito[productId])}
+                </li>
+              );
+            }
+            return null;
+          })}
+        </ul>
     <p>Total: {precioTotal}</p>
   </div>
     </div>
