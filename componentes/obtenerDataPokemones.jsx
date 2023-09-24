@@ -72,7 +72,11 @@ function DataPokemo() {
       }
     };
     
-    
+    const ResetBtn=()=>{
+      setPrecioTotal("");
+      setCarrito("")
+    }
+
     return (
     <div>
       <input
@@ -130,21 +134,22 @@ function DataPokemo() {
       
       <div className="carrito">
     <h2>Carrito de Compras</h2>
+      <h3>Pokemon <span>____</span> Cantidad <span>___</span> Precio</h3>
     <ul>
-      <li>Pokemon - Cantidad - Precio</li>
           {Object.keys(carrito).map((productId, index) => {
             const producto = data.find((item) => item.id === parseInt(productId));
             if (producto) {
               return (
                 <li key={index}>
-                  {producto.name} - {carrito[productId]} - ${(producto.id * 265 * carrito[productId])}
+                  {producto.name}<span>__</span>{carrito[productId]}<span>__</span>${(producto.id * 265 * carrito[productId])}
                 </li>
               );
             }
             return null;
           })}
         </ul>
-    <p>Total: {precioTotal}</p>
+    <p className="Total">Total: ${precioTotal}</p>
+    <button className="btn_eliminar" onClick={ResetBtn}>Eliminar Pedido</button>
   </div>
     </div>
   );
